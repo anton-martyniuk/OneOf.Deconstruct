@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net35;net45;netstandard1.3;netstandard2.0</TargetFrameworks>
+        <LangVersion>9.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+        <Version>3.0.263</Version>
+        <Authors>Anton Martyniuk</Authors>
+        <Copyright>Copyright (c) Anton Martyniuk 2023</Copyright>
+        <Title>An extension that offers a deconstruction to the popular OneOf library - Easy Discriminated Unions for C#</Title>
+        <Description>An extension that offers a deconstruction to the popular OneOf library. OneOf provides the F#-like discriminated unions for C#</Description>
+        <PackageTags>discriminated unions, return type, match switch, deconstruction</PackageTags>
+        <RepositoryUrl>https://github.com/anton-martyniuk/OneOf.Deconstruct</RepositoryUrl>
+        <PackageLicenseUrl>https://github.com/anton-martyniuk/OneOf.Deconstruct/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+        <PackageReference Include="OneOf" Version="3.0.263" />
+    </ItemGroup>
+
+    <Target Name="PostPackNugetDeploy" AfterTargets="Pack" Condition="'$(Configuration)'=='Release'">
+        <Exec Command="dotnet nuget push -s nuget.org &quot;$(ProjectDir)bin\$(Configuration)\$(PackageId).$(PackageVersion).nupkg&quot;" />
+    </Target>
+</Project>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneOf.Deconstruct", "src\OneOf.Deconstruct\OneOf.Deconstruct.csproj", "{DB20B127-C1AE-4ED4-BB1A-D3AC7EC934BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "src\Example\Example.csproj", "{55CFC12E-FCBF-4211-8BF4-07C820618AB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB20B127-C1AE-4ED4-BB1A-D3AC7EC934BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB20B127-C1AE-4ED4-BB1A-D3AC7EC934BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB20B127-C1AE-4ED4-BB1A-D3AC7EC934BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB20B127-C1AE-4ED4-BB1A-D3AC7EC934BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CFC12E-FCBF-4211-8BF4-07C820618AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CFC12E-FCBF-4211-8BF4-07C820618AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CFC12E-FCBF-4211-8BF4-07C820618AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CFC12E-FCBF-4211-8BF4-07C820618AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
