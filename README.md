@@ -18,6 +18,8 @@ Consider a `ProductService` which can either create or update a product:
 
 ### Creating a Product
 
+[See full example here](https://github.com/anton-martyniuk/OneOf.Deconstruct/tree/main/src/Example)
+
 ```csharp
 using Example;
 using Example.Models;
