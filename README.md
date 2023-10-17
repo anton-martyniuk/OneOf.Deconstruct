@@ -8,9 +8,11 @@ Easily deconstruct and use OneOf options without the need for matching. This lib
 
 ## Features
 
-- Deconstruction extension methods for `OneOf` objects.
+- Deconstruction extension methods for `OneOf` objects (like a TypeScript/JavaScript syntax).
 - Easy and clean handling of different OneOf outcomes.
 - No need for lengthy matching syntax.
+
+Extension methods provide deconstruction from 1 to 9 generic parameters, that corresponds to OneOf's count of generic parameters.
 
 ## Example of usage
 
