@@ -18,6 +18,8 @@ Extension methods provide deconstruction from 1 to 9 generic parameters, that co
 
 Consider a `ProductService` which can either create or update a product:
 
+> OneOf.Deconstruct has extension methods in the `OneOf` namespace, that way deconstruction can be used straight away without adding extra usings.
+
 ### Creating a Product
 
 [See full example here](https://github.com/anton-martyniuk/OneOf.Deconstruct/tree/main/src/Example)
